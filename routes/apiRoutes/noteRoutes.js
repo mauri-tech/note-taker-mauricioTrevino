@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require("uuid");
 const dbPath = path.join(__dirname, "../../db/db.json");
 
 // GET /api/notes
-router.get("/notes", (req, res) => {
+router.get("/", (req, res) => { // note the change here
   try {
     const data = getDataFromJson();
     console.log({ data });
@@ -18,7 +18,7 @@ router.get("/notes", (req, res) => {
 });
 
 // DELETE /api/notes/:id
-router.delete("/notes/:id", (req, res) => {
+router.delete("/:id", (req, res) => { // note the change here
   try {
     let data = getDataFromJson();
     data = data.filter((el) => el.id !== req.params.id);
@@ -30,7 +30,7 @@ router.delete("/notes/:id", (req, res) => {
 });
 
 // POST /api/notes
-router.post("/notes", (req, res) => {
+router.post("/", (req, res) => { // note the change here
   try {
     let data = getDataFromJson();
     const newNote = { ...req.body, id: uuidv4() };

@@ -1,4 +1,4 @@
-# Note Taker Starter Cod# Note Taker
+# Note Taker
 
 This is a web application called Note Taker that allows users to write and save notes. The application uses an Express.js back end to handle the note data, which is stored and retrieved from a JSON file.
 
@@ -64,6 +64,8 @@ The Note Taker application should include the following features:
   - `POST /api/notes` route should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. Each note should have a unique ID.
 - Bonus Feature (optional):
   - `DELETE /api/notes/:id` route should receive a query parameter containing the ID of a note to delete. It should read all notes from the db.json file, remove the note with the given ID, and then rewrite the notes to the db.json file.
+
+## Deployed Link
 
 ## License
 
