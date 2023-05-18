@@ -67,6 +67,7 @@ The Note Taker application should include the following features:
 
 ## Deployed Link
 
+https://note-taker-mauriciotrevino.herokuapp.com/
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
